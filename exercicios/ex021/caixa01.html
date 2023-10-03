@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: antiquewhite;
+            height: 300px;
+            width: 300px;
+
+            border: 10px double rgb(143, 134, 123);
+
+            padding: 10px;
+
+            outline: 5px dashed blueviolet;
+
+            margin: 10px;
+        
+        }
+        a{
+            display:block;
+            border: 3px dotted;
+        }
+        p#inline{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos são um tipo de box-level, mas <a href="#">os links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona. Se eu parar do nada e por um <p>parágrafo separado,</p>  ele vai quebrar a linha, ocupar toda a linha de baixo e quebra de novo para prosseguir com o conteúdo. A não ser que eu configure para que seja do tipo <code>inline-level</code>, <p id="inline">como você está vendo(ou melhor, não está) nesse texto inserido num parágrafo dentro do outro.</p></p>
+</body>
+</html>

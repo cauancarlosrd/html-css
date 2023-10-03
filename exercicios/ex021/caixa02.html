@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            margin: 0px 5px;
+            padding-bottom: 3px;
+        }
+        main{
+            background-color: white;
+            padding: 5px;
+            margin:5px;
+            /* SHORTHAND: "border-radius:", que compacta os quatro valores abaixo:*/
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+            border-bottom-left-radius: 13px;
+        }
+        footer{
+            background-color: hsl(0, 0%, 33%);
+            padding: 10px;
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+        }
+        footer>p>span#negrito{
+            font-weight: bold;
+        }
+        article>aside{
+            text-decoration: underline;
+        }
+        nav{
+            background-color: hsl(0, 0%, 33%);
+            padding: 3px;
+            text-align: center; 
+            box-shadow: 1px 1px 1px black;
+        }
+        nav>a{
+            color:white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0px 30px;
+            
+        }
+        nav>a:hover{
+            text-decoration: underline;
+        }
+        header>h1{
+            margin-left: 5px;
+        }
+        footer>p{
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site!</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam possimus excepturi earum fugiat consequuntur, tenetur tempore, blanditiis aliquid nihil tempora nam officia ipsa sit, dignissimos exercitationem ut est incidunt!</p>
+                <aside>
+                    <p>Artigo escrito por Jamarias Soárez</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por <span id="negrito">cauan</span>.</p>
+    </footer>
+
+</body>
+</html>

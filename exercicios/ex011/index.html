@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho de seu navegador.</p>
+
+    <picture>
+     <source media="(max-width: 790px)" srcset="imagens/paisagem-p.png" type="image/png">
+
+    <!--"width" quer dizer "largura"-->
+    <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" type="image/png">
+    <img src="imagens/paisagem-g.png" alt="Imagem flexível">
+    </picture>
+
+<!-- NUNCA SE ESQUEÇA DA ORDEM DOS SOURCES!! -->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <audio src="midia/phonk.mp3" controls></audio>
+        <!--MP3, WAV e OGG para funcionar em qualquer navegador-->
+    
+    <p>Uma outra maneira de reproduzir áudio:</p>
+    <audio preload="metadata" controls loop autoplay>
+        <source src="midia/phonk.mp3" type="audio/mpeg">
+        <p>Infelizmente, seu navegador não consegue reproduzir arquivos de áudio.</p>
+        <!--
+            Para colocar os outros tipos de áudio(nem todo navegador funciona MP3), coloque(em ordem de prioridade, o de cima será o que vai tocar primeiro) os três sources com o mesmo áudio em formatos diferentes. Exemplo:
+            
+            <source src="midia/phonk.ogg" type="audio/ogg">
+            <source src="midia/phonk.wav" type="audio/wav">
+            
+            *No final da lista, se quiser, utilize um <p> escrito "seu navegador não consegue reproduzir áudio" para aparecer caso o navegador não conseguir rproduzir nenhum.
+
+            EVITE ÁUDIOS WAV!! São muito pesados.
+        -->
+        
+    </audio>
+
+    <p><a href="midia/phonk.mp3" target="_blank">Clique aqui para baixar o arquivo MP3</a></p>
+</body>
+</html>
