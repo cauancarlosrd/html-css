@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+/*
+    O QUE NÃO CONSEGUI FAZER: 
+    - DEIXAR TUDO RESPONSIVO(BACKGROUND, TEXTOS E TÍTULOS);
+    - COLOCAR A INICIAL MAIOR, NÃO MAIÚSCULA, DO TÍTULO SEM GAMBIARRA COM SPAN.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+header>p,footer>p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header>h1{
+    font-family: 'Passion One', sans-serif;
+    font-weight: 1em;
+    font-size: 6.5em;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+span#maiuscula{
+    font-size: 1.4em;
+}
+
+header>p{
+    padding-bottom: 50px;
+
+}
+
+main{
+    font-family:'Sriracha', cursive;
+    font-size: 3.5vw;
+    padding: 0.8px 0px 0px 30px;
+}
+
+main > .normal > p{
+    line-height: 100px;
+    padding: 79px 0px;
+}
+
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 70.8px 0px 70.8px 30px;
+    margin-left: -30px;
+
+}
+
+#img02{
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 70.8px 0px 70.8px 30px;
+    margin-left: -30px;
+}
+
+#img01,#img02{
+    box-shadow: inset 0px 6px 17px rgba(0, 0, 0, 0.584);
+}
+
+.caixa{
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 7px;
+    display: inline-block;
+}
+
+.normal{
+    box-shadow: 10px 10px 10px black;
+    margin-left: -30px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.normal > p{
+    margin-left: 30px;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    text-align: center;
+}
+
+
