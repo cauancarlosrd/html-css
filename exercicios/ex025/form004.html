@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">e-mail: </label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="iphone">telefone: </label>
+                <input type="tel" name="phone" id="iphone" required pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+            <!-- Estudar mais sobre RegEx (expressões regulares)-->
+            <legend>botões.</legend>
+            <p><input type="submit" value="enviar"> <input type="reset" value="limpar"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
