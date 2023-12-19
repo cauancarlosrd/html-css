@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários output</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="in1">número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="20" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- dentro do parâmetro oninput, temos um código em JS que faz com que o valor digitado como número 1 some ao número 2 e coloque o resultado no output "isoma". Essa é a utilidade do output: ser algo como uma variável que pode ser alterada de acordo com determinados inputs (e, creio eu, outros elementos HMTL) por intermédio do JS. -->
+        </p>
+
+        <p>
+            <label for="in2">número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="20" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!--coloque o oninput nos dois inputs, que são as parcelas da soma!-->
+        </p>
+
+        <p>
+            <label for="isoma">soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
