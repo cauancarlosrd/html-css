@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários output</title>
+</head>
+<body>
+
+    <!-- FIZ POR CONTA PRÓPRIA:-->
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="iano">em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000" oninput=" iidade.innerHTML = Number(2023) - Number(iano.value)">
+
+
+            
+        </p>
+
+        <p>
+            <label for="iidade">idade:</label>
+            <output id="iidade">23</output>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+
+
+    <!--O JEITO QUE O GUANABARA FEZ:-->
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="inum">em que ano você nasceu?</label>
+            <input type="number" name="num" id="inum" min="1900" max="2023" oninput="calcIdade()">
+
+
+            
+        </p>
+
+        <p>
+            <label for="iiidade">você vai fazer ou fez</label>
+            <output id="iiidade">0</output>
+            <p> anos neste ano.</p>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iiidade.innerHTML = Number(atual) - Number(inum.value)
+        }
+    </script>
+
+
+<!-- nessa versão do Guanabara, calcula a idade de acordo com o ano atual; já eu usei o ano de 2023 como referência, o que, ano ano que vem(que já está bem próximo), já vai fornecer um valor errado, obsoleto. -->
+</body>
+</html>
