@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
 </head>
 <body>
-    <form action="cadastro.php">
-        
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="sexmas" value="M"> <label for="sexmas">masculino</label>
+
+            <br>
+
+            <input type="radio" name="sexo" id="sexfem" value="F"> <label for="sexfem">feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">futebol</label> <br>
+
+            <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">vôlei</label> <br>
+
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">basquete</label> <br>
+
+            <input type="checkbox" name="nat" id="inat" > <label for="inat">natação</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
